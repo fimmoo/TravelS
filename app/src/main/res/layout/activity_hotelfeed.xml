@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E22FFE5"
+        tools:context=".HotelfeedActivity"
+        android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/buttonDrawerToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/menu"
+                android:elevation="10dp"
+                android:background="@android:color/transparent">
+
+            </ImageButton>
+
+
+
+
+        <TextView
+            android:id="@+id/travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:fontFamily="serif"
+            android:text="TravelSafe"
+            android:layout_gravity="center"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@id/imageview1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/single"
+            android:layout_below="@+id/travel"
+            android:padding="20dp"
+             />
+
+        <TextView
+            android:id="@+id/single2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Single Bedroom"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/single3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:text="Our Standard Single Bedroom offers a cozy retreat for solo travelers, featuring a comfortable single bed, private en-suite bathroom, workspace, flat-screen TV, and complimentary Wi-Fi. Enjoy thoughtful amenities like tea and coffee-making facilities, climate control, and fresh toiletries for a restful stay."
+            android:textAlignment="center"
+            android:textColor="#074B81"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|italic|bold" />
+
+        <Button
+            android:id="@+id/singlebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/single3"
+            android:layout_centerHorizontal="true"
+            android:text="Book"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/dble"
+            android:layout_below="@+id/singlebtn"
+            android:padding="20dp"
+           />
+
+        <TextView
+            android:id="@+id/dble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Double Bedroom"
+            android:layout_gravity="center"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/dble1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dble"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:text="Our Standard Double Bedroom is perfect for couples or travel companions, featuring a cozy double bed, private en-suite bathroom, flat-screen TV, complimentary Wi-Fi, and a workspace. Additional amenities include tea and coffee-making facilities, climate control, and fresh toiletries for a comfortable and relaxing stay."
+            android:textAlignment="center"
+            android:textColor="#074B81"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|italic|bold" />
+
+        <Button
+            android:id="@+id/doublebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dble1"
+            android:layout_centerHorizontal="true"
+            android:text="Book"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/deluxd"
+            android:layout_below="@+id/doublebtn"
+            android:padding="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/deluxd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview3"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Deluxe Double Bedroom"
+            android:layout_gravity="center"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+
+        <TextView
+            android:id="@+id/deluxd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deluxd"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:text="Our Deluxe Double Bedroom offers a blend of comfort and elegance, featuring a spacious double bed, stylish decor, and a private en-suite bathroom with premium toiletries. Enjoy added luxuries such as a seating area, flat-screen TV, complimentary high-speed Wi-Fi, tea and coffee-making facilities, and climate control for a sophisticated and relaxing stay."
+            android:textAlignment="center"
+            android:textColor="#074B81"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|italic|bold" />
+
+
+        <Button
+            android:id="@+id/deluxebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deluxd1"
+            android:layout_centerHorizontal="true"
+            android:text="Book"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/imageview4"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/img_1"
+            android:layout_below="@+id/deluxebtn"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/swim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview4"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:text="Swimming Pool"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#074B81"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|italic|bold" />
+
+        <TextView
+            android:id="@+id/swim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swim"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:text="Our standard swimming pool provides a refreshing retreat for guests, featuring a clean, well-maintained space perfect for leisure or exercise. Surrounded by comfortable loungers and umbrellas, it’s ideal for soaking up the sun or relaxing after a swim. Enjoy access to the pool during designated hours, with towels provided for your convenience."
+            android:textAlignment="center"
+            android:textColor="#074B81"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|italic|bold" />
+
+
+        <ImageView
+            android:id="@+id/imageview5"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/img_2"
+            android:layout_below="@+id/swim1"
+            android:padding="20dp"
+             />
+
+        <TextView
+            android:id="@+id/gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview5"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Gymnasium"
+            android:layout_gravity="center"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+
+        <TextView
+            android:id="@+id/gymm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gym"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:justificationMode="inter_word"
+            android:text="Our standard gymnasium offers a well-equipped space to meet your fitness needs, featuring modern cardio machines, strength-training equipment, and free weights. Designed for all fitness levels, it provides a comfortable and clean environment for your workouts. Open daily with complimentary access for guests, ensuring you stay active during your stay."
+            android:textAlignment="center"
+            android:textColor="#074B81"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|italic|bold" />
+
+
+    </LinearLayout>
+</ScrollView>
