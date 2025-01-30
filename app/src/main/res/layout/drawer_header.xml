@@ -25,6 +25,7 @@
         android:textColor="#F8CA00"
         android:textSize="24sp"
         android:textStyle="normal|italic|bold" />
+
 </LinearLayout>
 
 

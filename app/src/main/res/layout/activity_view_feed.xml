@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+  <LinearLayout
+      android:id="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#1E22FFE5"
+      tools:context=".HotelfeedActivity"
+      android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/buttonDrawerToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/menu"
+        android:elevation="10dp"
+        android:background="@android:color/transparent">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:fontFamily="serif"
+        android:text="TravelSafe"
+        android:layout_gravity="center"
+        android:textColor="#045595"
+        android:textColorHighlight="#0A79AB"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginBottom="10dp" />
+</LinearLayout>

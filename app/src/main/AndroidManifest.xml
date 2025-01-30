@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +16,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelSafe"
         tools:targetApi="31">
+        <activity
+            android:name=".BookingHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewFeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageActicvity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false" />
         <activity
             android:name=".RateActivity"
             android:exported="false" />

@@ -10,7 +10,6 @@
     android:gravity="center_horizontal"
     tools:context=".MainActivity2">
 
-
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"

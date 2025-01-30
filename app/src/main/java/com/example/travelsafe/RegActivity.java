@@ -31,28 +31,28 @@ public class RegActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
 
-        // Initialize Firebase Authentication and Firestore
+        //ekhan theke firebase & firestore authentication shuru
         firebaseAuth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
 
-        // Initialize views
+
         nameEditText = findViewById(R.id.name);
         emailEditText = findViewById(R.id.email);
         passwordEditText = findViewById(R.id.password);
         phoneEditText = findViewById(R.id.phone);
         registerButton = findViewById(R.id.register_button);
 
-        // Set up click listener for the Register button
+
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Get user input
+                // user er input nibe
                 String name = nameEditText.getText().toString().trim();
                 String email = emailEditText.getText().toString().trim();
                 String password = passwordEditText.getText().toString().trim();
                 String phone = phoneEditText.getText().toString().trim();
 
-                // Validate input
+                // jodi input valid hoy
                 if (!isValidName(name)) {
                     nameEditText.setError("Enter a valid name (minimum 3 characters)");
                     nameEditText.requestFocus();
@@ -77,7 +77,7 @@ public class RegActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Register user in Firebase
+                // user ke firebase e register korbe
                 registerUser(name, email, password, phone);
             }
         });
@@ -93,7 +93,7 @@ public class RegActivity extends AppCompatActivity {
     }
 
     private boolean isValidPhone(String phone) {
-        String phonePattern = "^[+]?\\d{10,15}$"; // Supports international format
+        String phonePattern = "^[+]?\\d{10,15}$";
         return phone.matches(phonePattern);
     }
 
@@ -104,13 +104,14 @@ public class RegActivity extends AppCompatActivity {
                         FirebaseUser user = firebaseAuth.getCurrentUser();
 
                         if (user != null) {
-                            // Send verification email
+
+                            // verification email send korbe
                             user.sendEmailVerification().addOnCompleteListener(emailTask -> {
                                 if (emailTask.isSuccessful()) {
                                     saveUserToFirestore(name, email, phone);
                                     Toast.makeText(RegActivity.this, "Verification email sent. Please verify your email.", Toast.LENGTH_SHORT).show();
 
-                                    // Redirect to Login Activity
+                                    // email verified howar pro login page e nibe
                                     Intent intent = new Intent(RegActivity.this, LoginActivity.class);
                                     startActivity(intent);
                                     finish();
@@ -126,13 +127,14 @@ public class RegActivity extends AppCompatActivity {
     }
 
     private void saveUserToFirestore(String name, String email, String phone) {
-        // Create a user object
+
+        // user object create
         Map<String, Object> user = new HashMap<>();
         user.put("name", name);
         user.put("email", email);
         user.put("phone", phone);
 
-        // Save user to Firestore
+        // user ke firestore e save korbe
         firestore.collection("users")
                 .document(firebaseAuth.getCurrentUser().getUid())
                 .set(user)

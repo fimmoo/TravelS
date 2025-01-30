@@ -45,4 +45,10 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.cloudinary:cloudinary-android:3.0.2'
+    implementation 'com.google.firebase:firebase-firestore:24.7.1'
+    implementation 'com.google.firebase:firebase-analytics:21.4.0'
+    apply plugin: 'com.google.gms.google-services'
+    implementation 'com.google.firebase:firebase-firestore:24.4.2'
 }

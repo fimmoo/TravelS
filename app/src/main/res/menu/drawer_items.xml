@@ -48,8 +48,8 @@
 
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/share"
-                android:title="Share" />
+                android:icon="@drawable/contact"
+                android:title="Contact Us" />
 
             <item
                 android:id="@+id/nav_rate"

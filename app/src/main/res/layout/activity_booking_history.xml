@@ -7,93 +7,96 @@
     android:layout_height="match_parent"
     android:background="#D5DAFF"
     android:gravity="center_vertical"
-    tools:context=".ProfileActivity">
+    tools:context=".BookingHistoryActivity">
 
     <TextView
-        android:id="@+id/yp"
+        android:id="@+id/Bookinghistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:fontFamily="sans-serif"
-        android:text="Your Profile"
+        android:text="Booking History"
         android:textColor="#045595"
         android:textColorHighlight="#0A79AB"
         android:textSize="30dp"
         android:textStyle="normal|bold|italic" />
 
+
     <TextView
-        android:id="@+id/basic"
+        android:id="@+id/rname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:text=" Room Name"
+        android:textColor="@color/black"
+        android:textColorHighlight="#0A79AB"
+        android:textSize="20dp"
+        android:textStyle="normal|bold|italic"
+        android:layout_below="@+id/Bookinghistory"/>
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rname"
+        android:layout_margin="20dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Check-in-Date"
+        android:textColor="@color/black"
+        android:textColorHighlight="#0A79AB"
+        android:textSize="20dp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_gravity="center"
         android:fontFamily="sans-serif"
-        android:text="Basic Information"
+        android:text="Check-out-Date"
         android:textColor="@color/black"
         android:textColorHighlight="#0A79AB"
         android:textSize="20dp"
         android:textStyle="normal|bold|italic"
-        android:layout_below="@id/yp"/>
+        android:layout_below="@id/date1"/>
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/reservename"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:fontFamily="sans-serif"
-        android:text="Name"
-        android:textColor="@color/black"
-        android:textColorHighlight="#0A79AB"
-        android:textSize="20dp"
-        android:textStyle="normal|bold|italic"
-        android:layout_below="@+id/basic"/>
-
-    <TextView
-        android:id="@+id/uemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:fontFamily="sans-serif"
-        android:text="Email"
-        android:textColor="@color/black"
-        android:textColorHighlight="#0A79AB"
-        android:textSize="20dp"
-        android:textStyle="normal|bold|italic"
-        android:layout_below="@id/name"/>
-
-    <TextView
-        android:id="@+id/phn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:layout_gravity="center"
         android:fontFamily="sans-serif"
-        android:text="Mobile Number"
+        android:text="User Name"
         android:textColor="@color/black"
         android:textColorHighlight="#0A79AB"
         android:textSize="20dp"
         android:textStyle="normal|bold|italic"
-        android:layout_below="@id/uemail"/>
+        android:layout_below="@id/date2"/>
 
     <Button
-        android:id="@+id/logout"
+        android:id="@+id/Home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
+        android:text="Home"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/phn"
-        android:layout_margin="10dp"/>
+        android:layout_below="@id/reservename"
+        android:layout_margin="20dp"/>
 
     <Button
-        android:id="@+id/book_history"
+        android:id="@+id/fetch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Booking History"
+        android:text="Fetch Data"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/logout"
-        android:layout_margin="10dp"/>
+        android:layout_below="@id/Home"
+        android:layout_margin="20dp"/>
+
 
 </RelativeLayout>

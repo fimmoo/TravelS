@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,11 +19,13 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageButton buttonDrawerToggle;
     NavigationView navigationView;
+    private Button singlebtn, doublebtn, deluxebtn;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -44,6 +47,35 @@ public class MainActivity extends AppCompatActivity {
         TextView title = headerView.findViewById(R.id.t1);
         TextView website = headerView.findViewById(R.id.t2);
 
+        singlebtn = findViewById(R.id.singlebtn);
+        doublebtn = findViewById(R.id.doublebtn);
+        deluxebtn = findViewById(R.id.deluxebtn);
+
+
+        singlebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BookActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        doublebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BookActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        deluxebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BookActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -54,11 +86,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Home Clicked!", Toast.LENGTH_SHORT).show();
                 }
                 if (itemId == R.id.nav_room) {
-                    Toast.makeText(MainActivity.this, "Welcome!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
                 }
                 if (itemId == R.id.nav_login) {
-                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                    startActivity(intent);
                     Toast.makeText(MainActivity.this, "You are already logged in!", Toast.LENGTH_SHORT).show();
                 }
 
@@ -68,9 +98,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (itemId == R.id.nav_logout) {
+                    FirebaseAuth.getInstance().signOut();
                     Toast.makeText(MainActivity.this, "You are logged out!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
+                    finish();
                 }
                 if (itemId == R.id.nav_share) {
                     Intent intent = new Intent(MainActivity.this, ShareActivity.class); //shareactivity
@@ -87,7 +119,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 }
-

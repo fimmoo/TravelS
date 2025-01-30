@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -15,21 +14,17 @@
         tools:context=".HotelfeedActivity"
         android:orientation="vertical">
 
+        <ImageButton
+            android:id="@+id/buttonDrawerToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/menu"
+            android:elevation="10dp"
+            android:background="@android:color/transparent">
 
-            <ImageButton
-                android:id="@+id/buttonDrawerToggle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/menu"
-                android:elevation="10dp"
-                android:background="@android:color/transparent">
-
-            </ImageButton>
-
-
-
+        </ImageButton>
 
         <TextView
             android:id="@+id/travel"
@@ -52,7 +47,7 @@
             android:background="@drawable/single"
             android:layout_below="@+id/travel"
             android:padding="20dp"
-             />
+            />
 
         <TextView
             android:id="@+id/single2"
@@ -85,6 +80,20 @@
             android:textSize="20dp"
             android:textStyle="normal|italic|bold" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="2500 BDT"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
         <Button
             android:id="@+id/singlebtn"
             android:layout_width="wrap_content"
@@ -102,7 +111,7 @@
             android:background="@drawable/dble"
             android:layout_below="@+id/singlebtn"
             android:padding="20dp"
-           />
+            />
 
         <TextView
             android:id="@+id/dble"
@@ -134,6 +143,20 @@
             android:textColorHighlight="#0A79AB"
             android:textSize="20dp"
             android:textStyle="normal|italic|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="3500 BDT"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
 
         <Button
             android:id="@+id/doublebtn"
@@ -186,6 +209,20 @@
             android:textColorHighlight="#0A79AB"
             android:textSize="20dp"
             android:textStyle="normal|italic|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="5500 BDT"
+            android:textColor="#045595"
+            android:textColorHighlight="#0A79AB"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
 
 
         <Button
@@ -248,7 +285,7 @@
             android:background="@drawable/img_2"
             android:layout_below="@+id/swim1"
             android:padding="20dp"
-             />
+            />
 
         <TextView
             android:id="@+id/gym"

@@ -57,9 +57,19 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
 
+                if (email.equals("fahimahmed0632@gmail.com") && password.equals("Fahim12")) {
+                    Toast.makeText(LoginActivity.this, "Admin Login Successful", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
+                    startActivity(intent);
+                    finish();
+                    return;
+                }
+
                 // user authentication complete
                 loginUser(email, password);
             }
+
+
         });
 
         // account na thakle create account button e click korbe
